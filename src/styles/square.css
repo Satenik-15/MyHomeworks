@@ -7,18 +7,17 @@ header {
     width: 100px;
     height: 100px;
     background-color: red;
-    left: 0px;
+    text-align: center;
 }
 
 .move {  
-    width: 100px;
-    height: 100px;
     position: relative;
     animation: moveToRight 30s;     
-    animation-direction: normal;
+    animation-direction: forwards;
 }
 
 @keyframes moveToRight {
-    0% { left: 0; top: 0}
-    100% {left: 90%; right: 0; top: 0;}
+    from { left: 0; top: 0}
+    to {left: calc(100% - 100px); top: 0;}
 }
+

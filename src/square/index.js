@@ -29,7 +29,11 @@ class Square extends Component {
                     <h1>When you click on a square, it will move to the right and change its color</h1>
                     <h3>You clicked {this.state.count} times</h3>
                 </header>
-                <div className={this.state.className} onClick={this.changeColor} style={{backgroundColor: this.state.backgroundColor}}>
+                <div 
+                    className={this.state.className} 
+                    onClick={this.changeColor} 
+                    style={{backgroundColor: this.state.backgroundColor}}>
+                        <p>{this.state.count}</p>
                 </div>
             </div>
            )
