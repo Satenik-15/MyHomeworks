@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 header {
     text-align: center;
     color: red;
@@ -8,11 +12,12 @@ header {
     height: 100px;
     background-color: red;
     text-align: center;
+    border-radius: 5px;
 }
 
 .move {  
     position: relative;
-    animation: moveToRight 30s;     
+    animation: moveToRight 20s;     
     animation-direction: forwards;
 }
 
@@ -20,4 +25,25 @@ header {
     from { left: 0; top: 0}
     to {left: calc(100% - 100px); top: 0;}
 }
+
+.running {
+    animation-play-state: running;
+}
+
+.paused {
+    animation-play-state: paused;
+}
+
+.popup {
+    position: absolute;
+    background-color:lightskyblue;
+    z-index: 9999;
+    width: 30%;
+    height: 20%;
+    top: 40%;
+    left: 35%;
+    border-radius: 5px;
+    box-shadow: -5px 5px 3px lightblue;
+}
+
 
